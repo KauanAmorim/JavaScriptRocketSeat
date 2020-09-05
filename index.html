@@ -7,26 +7,22 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" name="nome" id="nome" class="nome"/>
-        <button class="botao">Adicionar</button>
+        <input type="text" id="nome">
     </div>
 
     <script>
-        // var inputElement = document.getElementById('nome');
-        // var inputElement = document.getElementsByTagName('input');
-        // var inputElement = document.getElementsByClassName('nome');
-        // var inputElement = document.querySelector('div#app input');
-        // var inputElement = document.querySelector('input[name=nome]');
-        // var inputElement = document.querySelectorAll('input');
-        // console.log(inputElement);
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://rocketseat.com.br');
+        linkElement.setAttribute('title', 'Site da Rocketseat');
 
-        var inputElement = document.querySelector('input[name=nome]');
-        var btnElement = document.querySelector('button.botao');
+        var textElement = document.createTextNode('Acessar site rocketseat');
+        linkElement.appendChild(textElement);
 
-        btnElement.onclick = function() {
-            var text = inputElement.value;
-            alert(text);
-        }
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+
+        var inputElement = document.querySelector('#nome');
+        containerElement.removeChild(inputElement);
     </script>
 </body>
 </html>
