@@ -41,8 +41,4 @@ function validProperties(Address)
     );
 }
 
-
-
 console.log(displayAddress(endereco));
-
-
