@@ -7,15 +7,25 @@
 </head>
 <body>
     <div id="app">
-        <button onmouseover="mostrarAlerta()">
-            Interaja comigo
-        </button>
-        <input onkeypress="mostrarAlerta()" type="text" placeholder="Interaja Comigo">
+        <input type="text" name="nome" id="nome" class="nome"/>
+        <button class="botao">Adicionar</button>
     </div>
 
     <script>
-        function mostrarAlerta(){
-            alert('Interação executada');
+        // var inputElement = document.getElementById('nome');
+        // var inputElement = document.getElementsByTagName('input');
+        // var inputElement = document.getElementsByClassName('nome');
+        // var inputElement = document.querySelector('div#app input');
+        // var inputElement = document.querySelector('input[name=nome]');
+        // var inputElement = document.querySelectorAll('input');
+        // console.log(inputElement);
+
+        var inputElement = document.querySelector('input[name=nome]');
+        var btnElement = document.querySelector('button.botao');
+
+        btnElement.onclick = function() {
+            var text = inputElement.value;
+            alert(text);
         }
     </script>
 </body>
