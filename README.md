@@ -1,10 +1,10 @@
 # JavaScriptRocketSeat
 
-#Português
+# Português
 Esse é meu repositório pesoal para estudar JavaScript da RocketSeat.
 
-#English
+# English
 This is my personal repositody to study JavaScript of Rocketseat.
 
-#Site
+# Site
 https://rocketseat.com.br/
